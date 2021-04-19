@@ -1,0 +1,285 @@
+:root {
+  --primary-color: #8bdeff;
+  --secondary-color: #d64032;
+  --xtra-color: #065f93;
+  --hover: #e44334;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* HEADER STYLES */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 66px;
+  background: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+header .logo {
+  width: 110px;
+  height: auto;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header .logo img {
+  width: 100%;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #444;
+}
+
+/* HERO STYLES */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 600px;
+  width: 100%;
+}
+
+.text {
+  width: 50%;
+  padding-right: 3rem;
+}
+
+.text h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.text form input[type='email'] {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--xtra-color);
+  padding: 1rem;
+  font-size: 1rem;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+.text form input[type='submit'] {
+  padding: 1rem 2rem;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.text form input[type='submit']:hover {
+  background: var(--hover);
+}
+
+.banner {
+  width: 50%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* SECTION FEATURES STYLES */
+#features {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+}
+
+#features ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#features ul li:last-child {
+  margin-bottom: 0;
+}
+
+#features ul li .icon {
+  width: 100px;
+  margin-right: 2rem;
+}
+
+#features ul li .icon img {
+  width: 100%;
+  height: auto;
+}
+
+#features .description h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* VIDEO TRAILER STYLES */
+#video-trailer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+}
+
+#video-trailer #video {
+  max-width: 560px;
+  width: 100%;
+}
+
+/* PRICING STYLES */
+#pricing {
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pricing-wrapper {
+  display: grid;
+  width: 100%;
+  max-width: 1000px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.2rem;
+}
+
+.pricing-wrapper .box {
+  border: 2px solid var(--xtra-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.box ul {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.box h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.box ul li {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.box .btn {
+  padding: 0.8rem 2.3rem;
+  font-weight: 600;
+  background: var(--secondary-color);
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.box .btn:hover {
+  background: var(--hover);
+}
+
+/* FOOTER */
+
+footer .copy {
+  text-align: center;
+  font-size: small;
+  background: #000;
+  color: #fff;
+  padding: 0.7rem;
+}
+
+@media screen and (max-width: 890px) {
+  .hero {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .hero .text {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #feature {
+    padding: auto 1rem;
+  }
+
+  .pricing-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    justify-content: center;
+  }
+
+  header nav {
+    display: none;
+  }
+}

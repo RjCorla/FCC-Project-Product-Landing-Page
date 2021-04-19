@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      defer
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script>
+    <title>FCC: Project || Product Landing Page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/logo.jpg" alt="" id="header-img" />
+          </a>
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#video-trailer" class="nav-link">How it Works</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <div class="text">
+          <h1>Play Games, Anytime, Anywhere.</h1>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <input type="submit" id="submit" value="Get Started" />
+          </form>
+        </div>
+
+        <div class="banner">
+          <img src="./assets/undraw.svg" />
+        </div>
+      </div>
+
+      <section id="features">
+        <ul>
+          <li>
+            <div class="icon">
+              <img
+                src="./assets/iconfinder_Games_2_753945.svg"
+                alt="console gaming"
+              />
+            </div>
+            <div class="description">
+              <h3>Home Console</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus, cupiditate.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="icon">
+              <img
+                src="./assets/iconfinder_NintendoSwitch_7422493.svg"
+                alt="portability"
+              />
+            </div>
+            <div class="description">
+              <h3>Portability</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                doloribus.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="icon">
+              <img
+                src="./assets/iconfinder_Videogames_two_players_joysticks_multiplayer_6646212.svg"
+                alt="multiplayer"
+              />
+            </div>
+            <div class="description">
+              <h3>Play with Friends</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                porro.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="video-trailer">
+        <iframe
+          id="video"
+          height="315"
+          src="https://www.youtube.com/embed/f5uik5fgIaI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="pricing">
+        <div class="pricing-wrapper">
+          <div class="box box-one">
+            <h2 class="title">Nintendo Switch</h2>
+            <h5>&#8369; 18,000.00</h5>
+            <ul>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <button class="btn">Buy Now</button>
+          </div>
+
+          <div class="box box-two">
+            <h2 class="title">Nintendo Switch Pro</h2>
+            <h5>&#8369; 25,000.00</h5>
+            <ul>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <button class="btn">Buy Now</button>
+          </div>
+
+          <div class="box box-three">
+            <h2 class="title">Nintendo Switch Lite</h2>
+            <h5>&#8369; 12,000.00</h5>
+            <ul>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <button class="btn">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="copy">Coded by: RjCorla &copy; 2021 Nintendo</div>
+      </footer>
+    </div>
+  </body>
+</html>
